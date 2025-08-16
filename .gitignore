@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Gradio cache
+.gradio/
+
+# Generated media files
+*.mp3
+*.wav
+
+
+# Python cache
+__pycache__/
+.venv
