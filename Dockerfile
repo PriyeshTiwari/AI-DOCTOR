@@ -4,8 +4,9 @@ FROM python:3.13-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Install system dependencies (portaudio and ffmpeg)
+# Install system dependencies (build tools, portaudio, and ffmpeg)
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
     ffmpeg \
     portaudio19-dev \
     && rm -rf /var/lib/apt/lists/*
